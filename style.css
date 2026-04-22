@@ -1,0 +1,171 @@
+/* Body background */
+body {
+  background:linear-gradient(135deg, #f83600, #f9d423);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero card */
+#hero {
+  margin-top: 100px;   /* pushes card down so corners are visible */
+
+
+  background: #ffffff;       /* white card */
+  color: #635b5b;            /* dark text inside */
+  border-radius: 20px;
+  padding: 40px;
+  margin: 60px auto;         /* spacing from background */
+  max-width: 900px;          /* neat width */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  margin-bottom: 50px;
+}
+
+/* Headings */
+#hero h1 {
+  color: #010907; /* bottle green for name */
+}
+
+#hero h3 {
+  color: #ec7f25; /* lighter green accent for role */
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color:#ec7f25;  /* bottle green */
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #db8849;  /* lighter green hover */
+  color: #fff;
+}
+
+.btn-outline-primary {  border: 2px solid#ec7f25;
+  color: #000c09;
+}
+
+.btn-outline-primary:hover {
+  background-color: #db8849;
+  color: #fff;
+}
+
+/* Skills grid layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px; /* space between boxes */
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+#skills {
+  padding: 40px 20px;
+}
+
+/* Individual skill box */
+.skill-box {
+  background-color: #ffffff;   /* white card */
+  color: #000a08;              /* bottle green text */
+  border: 2px solid #ec7f25;;   /* border in bottle green */
+  border-radius: 12px;         /* rounded corners */
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Hover effect */
+.skill-box:hover {
+  background: linear-gradient(135deg, #ff9a9e, #fecfef);
+   /* fill with bottle green */
+  color: #ffffff;              /* text turns white */
+  transform: translateY(-5px); /* slight lift */
+}
+.navbar {
+  position: fixed;       /* keeps navbar stuck at the top even when scrolling */
+  display: flex;         /* arranges logo left + links right in one row */
+  top: 0;                /* positions it at the very top of the page */
+  width: 100%;           /* stretches across the full width of the screen */
+  padding: 20px 60px;    /* adds breathing space inside the navbar */
+  z-index: 1000;         /* ensures navbar stays above other content */
+  margin-top: 50px; /* pushes navbar down */}
+
+/* Navigation links */
+.nav-right a {
+  display: inline-block;              /* allows transform to work */
+  margin-left: 20px;          /* adds space between each link */
+  text-decoration: none;      /* removes the default underline */
+  font-weight: 600;           /* makes the text slightly bold */
+  color: #ffffff;             /* sets the default text color (white) */
+  transition: transform 0.2s ease, color 0.2s ease;    /* smooth animation for movement + color */
+   
+
+  
+}
+
+/* Hover effect */
+.nav-right a:hover {
+  color: #ffcc80;             /* changes text color when hovered */
+  transform: translateY(-15px);        /* jumps up by 5px */
+}
+
+
+/* Target the About section by ID */
+#about {
+  background: linear-gradient(135deg, #ffcc80, #ff9966);
+; /* gradient background */
+  color: #222;
+  padding: 60px 20px;   /* inner spacing */
+  border-radius: 20px;
+  max-width: 1000px;    /* controls width of the box */
+  margin: 60px auto;    /* centers it horizontally + adds vertical gap */
+}
+
+/* Style the heading */
+#about h2 {
+  font-weight: 700;
+  border-bottom: 3px solid #2575fc;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style the text */
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Style the profile image */
+#about img {
+  border: 5px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+section {
+  padding: 50px 20px;   /* 40px top & bottom, 20px left & right */
+  margin-bottom: 50px;  /* extra space below */
+}
+
+.project-card h2{
+  text-align: center;
+  font-weight: 700;
+}
+.card{
+  border-radius: 20px;
+  transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.card .card-body,
+.card .card-title,
+.card .card-text,
+.card .btn
+{transition: none;}
