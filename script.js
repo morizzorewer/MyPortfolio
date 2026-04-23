@@ -10,7 +10,7 @@
         method: form.method,
         body: data,
         headers: { 'Accept': 'application/json' }
-      });
+      }); 
       if (response.ok) {
         status.innerHTML = "<p style='color:green;'>Thanks! Your message was sent successfully.</p>";
         form.reset();
