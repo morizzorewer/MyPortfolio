@@ -34,4 +34,4 @@ Visit my portfolio here: [MyPortfolio](https://morizzorewer.github.io/MyPortfoli
 
 ## 📬 Contact
 - Email: [snehaprabha.kr7@gmail.com](mailto:snehaprabha.kr7@gmail.com)  
-- LinkedIn: [My LinkedIn](https://linkedin.com/in/snehaprabha-kr-826561277)
+- LinkedIn: [My LinkedIn](https://www.linkedin.com/in/snehaprabha-kr-826561277/)
