@@ -23,23 +23,23 @@ body {
 
 /* Headings */
 #hero h1 {
-  color: #010907; /* bottle green for name */
+  color: #010907; /* black for name */
 }
 
 #hero h3 {
-  color: #ec7f25; /* lighter green accent for role */
+  color: #ec7f25; /*  accent for role */
   margin-bottom: 20px;
 }
 
 /* Buttons */
 .btn-primary {
-  background-color:#ec7f25;  /* bottle green */
+  background-color:#ec7f25;  /* warm orange */
   border: none;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #db8849;  /* lighter green hover */
+  background-color: #db8849;  /* lighter orange hover */
   color: #fff;
 }
 
@@ -67,8 +67,8 @@ body {
 /* Individual skill box */
 .skill-box {
   background-color: #ffffff;   /* white card */
-  color: #000a08;              /* bottle green text */
-  border: 2px solid #ec7f25;;   /* border in bottle green */
+  color: #000a08;              /* black text */
+  border: 2px solid #ec7f25;;   /* border in warm orange */
   border-radius: 12px;         /* rounded corners */
   padding: 15px;
   text-align: center;
@@ -82,7 +82,7 @@ body {
 /* Hover effect */
 .skill-box:hover {
   background: linear-gradient(135deg, #ff9a9e, #fecfef);
-   /* fill with bottle green */
+   /* fill soft pink */
   color: #ffffff;              /* text turns white */
   transform: translateY(-5px); /* slight lift */
 }

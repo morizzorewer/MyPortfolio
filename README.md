@@ -10,7 +10,7 @@ Visit my portfolio here: [MyPortfolio](https://morizzorewer.github.io/MyPortfoli
 
 ## ✨ Features
 - Responsive design for desktop and mobile
-- Bold, modern color themes (charcoal, orange, teal, bottle green, pink, yellow)
+- Bold, modern color themes (Orange gradient,Blue accent,White,Warm orange,Soft pink)
 - Sections for Home, About Me, Projects, and Contact
 - Clean navigation with smooth scrolling
 - Contact form powered by Formspree with inline success/error messages
