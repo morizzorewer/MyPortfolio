@@ -102,7 +102,7 @@ body {
   text-decoration: none;      /* removes the default underline */
   font-weight: 600;           /* makes the text slightly bold */
   color: #ffffff;             /* sets the default text color (white) */
-  transition: transform 0.2s ease, color 0.2s ease;    /* smooth animation for movement + color */
+  transition: transform 0.3s ease, color 0.3s ease;    /* smooth animation for movement + color */
    
 
   
@@ -111,7 +111,7 @@ body {
 /* Hover effect */
 .nav-right a:hover {
   color: #ffcc80;             /* changes text color when hovered */
-  transform: translateY(-15px);        /* jumps up by 5px */
+  transform: translateY(-5px);        /* jumps up by 5px */
 }
 
 
