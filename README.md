@@ -26,6 +26,7 @@ Visit my portfolio here: [MyPortfolio](https://morizzorewer.github.io/MyPortfoli
 
 ## 📌 Future Projects
 - **Book App**: Practice with lists, dictionaries, recursion, and functions in Python  
+- **Todo App** :A simple responsive task manager built with HTML, CSS, and JavaScript.  
 - **Portfolio Enhancements**: Add hover effects, spacing refinements, and interactive JavaScript elements  
 - **Mini Projects**: Flask/Django apps with SQLite database integration  
 - **UI/UX Experiments**: Bold layouts, containerized cards, and smooth navigation improvements  
