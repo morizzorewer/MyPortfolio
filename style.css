@@ -1,133 +1,191 @@
-/* Body background */
+:root {
+  --warm-orange: #ec7f25;
+  --warm-orange-soft: #db8849;
+  --dark-text: #010907;
+  --section-gap: clamp(3rem, 7vw, 5rem);
+  --card-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background:linear-gradient(135deg, #f83600, #f9d423);
-  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f83600, #f9d423);
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 92px 0 0;
+  color: #222;
+  overflow-x: hidden;
 }
 
-/* Hero card */
+section {
+  padding: 0 20px;
+  margin-bottom: var(--section-gap);
+  scroll-margin-top: 110px;
+}
+
+.portfolio-navbar {
+  background: rgba(248, 83, 3, 0.92);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(12px);
+  padding: 0.9rem 0;
+}
+
+.portfolio-navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-navbar .navbar-brand:hover,
+.portfolio-navbar .navbar-brand:focus {
+  color: #ffddab;
+}
+
+.portfolio-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link:focus {
+  color: #ffddab;
+  transform: translateY(-2px);
+}
+
+.portfolio-navbar .navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.45rem 0.65rem;
+}
+
+.portfolio-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#home {
+  padding-top: 24px;
+}
+
 #hero {
-  margin-top: 100px;   /* pushes card down so corners are visible */
-
-
-  background: #ffffff;       /* white card */
-  color: #635b5b;            /* dark text inside */
-  border-radius: 20px;
-  padding: 40px;
-  margin: 60px auto;         /* spacing from background */
-  max-width: 900px;          /* neat width */
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-  margin-bottom: 50px;
+  background: #ffffff;
+  color: #635b5b;
+  border-radius: 28px;
+  padding: clamp(2rem, 6vw, 4rem);
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: var(--card-shadow);
 }
 
-/* Headings */
+.hero-content {
+  width: 100%;
+  min-width: 0;
+}
+
 #hero h1 {
-  color: #010907; /* black for name */
+  color: var(--dark-text);
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  margin-bottom: 1rem;
 }
 
 #hero h3 {
-  color: #ec7f25; /*  accent for role */
-  margin-bottom: 20px;
+  color: var(--warm-orange);
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  margin-bottom: 1.5rem;
 }
 
-/* Buttons */
+#hero p {
+  font-size: clamp(1rem, 2.7vw, 1.35rem);
+  line-height: 1.7;
+  margin: 0 auto 2rem;
+  max-width: 680px;
+}
+
+.hero-actions .btn {
+  min-width: 160px;
+  border-radius: 14px;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+}
+
 .btn-primary {
-  background-color:#ec7f25;  /* warm orange */
+  background-color: var(--warm-orange);
   border: none;
   color: #fff;
 }
 
-.btn-primary:hover {
-  background-color: #db8849;  /* lighter orange hover */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--warm-orange-soft);
   color: #fff;
 }
 
-.btn-outline-primary {  border: 2px solid#ec7f25;
-  color: #000c09;
+.btn-outline-primary {
+  border: 2px solid var(--warm-orange);
+  color: var(--dark-text);
 }
 
-.btn-outline-primary:hover {
-  background-color: #db8849;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--warm-orange-soft);
+  border-color: var(--warm-orange-soft);
   color: #fff;
 }
 
-/* Skills grid layout */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px; /* space between boxes */
-  margin-top: 200px;
-  margin-bottom: 20px;
-}
 #skills {
-  padding: 40px 20px;
+  padding: 0 20px;
 }
 
-/* Individual skill box */
+#skillsTab {
+  gap: 0.75rem;
+  border-bottom: none;
+}
+
+#skillsTab .nav-link {
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #1d3a8a;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+}
+
+#skillsTab .nav-link.active {
+  background: #ffffff;
+  color: #111111;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
 .skill-box {
-  background-color: #ffffff;   /* white card */
-  color: #000a08;              /* black text */
-  border: 2px solid #ec7f25;;   /* border in warm orange */
-  border-radius: 12px;         /* rounded corners */
+  background-color: #ffffff;
+  color: #000a08;
+  border: 2px solid var(--warm-orange);
+  border-radius: 12px;
   padding: 15px;
   text-align: center;
   font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, background-color 0.2s ease;
-  margin-bottom: 20px;
   margin-top: 10px;
 }
 
-/* Hover effect */
 .skill-box:hover {
   background: linear-gradient(135deg, #ff9a9e, #fecfef);
-   /* fill soft pink */
-  color: #ffffff;              /* text turns white */
-  transform: translateY(-5px); /* slight lift */
-}
-.navbar {
-  position: fixed;       /* keeps navbar stuck at the top even when scrolling */
-  display: flex;         /* arranges logo left + links right in one row */
-  top: 0;                /* positions it at the very top of the page */
-  width: 100%;           /* stretches across the full width of the screen */
-  padding: 20px 60px;    /* adds breathing space inside the navbar */
-  z-index: 1000;         /* ensures navbar stays above other content */
-  margin-top: 50px; /* pushes navbar down */}
-
-/* Navigation links */
-.nav-right a {
-  display: inline-block;              /* allows transform to work */
-  margin-left: 20px;          /* adds space between each link */
-  text-decoration: none;      /* removes the default underline */
-  font-weight: 600;           /* makes the text slightly bold */
-  color: #ffffff;             /* sets the default text color (white) */
-  transition: transform 0.3s ease, color 0.3s ease;    /* smooth animation for movement + color */
-   
-
-  
+  color: #ffffff;
+  transform: translateY(-5px);
 }
 
-/* Hover effect */
-.nav-right a:hover {
-  color: #ffcc80;             /* changes text color when hovered */
-  transform: translateY(-5px);        /* jumps up by 5px */
-}
-
-
-
-/* Target the About section by ID */
 #about {
   background: linear-gradient(135deg, #ffcc80, #ff9966);
-; /* gradient background */
   color: #222;
-  padding: 60px 20px;   /* inner spacing */
-  border-radius: 20px;
-  max-width: 1000px;    /* controls width of the box */
-  margin: 60px auto;    /* centers it horizontally + adds vertical gap */
+  padding: clamp(2rem, 5vw, 4rem) 20px;
+  border-radius: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Style the heading */
 #about h2 {
   font-weight: 700;
   border-bottom: 3px solid #2575fc;
@@ -136,37 +194,142 @@ body {
   margin-bottom: 20px;
 }
 
-/* Style the text */
 #about p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Style the profile image */
 #about img {
   border: 5px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-section {
-  padding: 50px 20px;   /* 40px top & bottom, 20px left & right */
-  margin-bottom: 50px;  /* extra space below */
+.project-card {
+  margin: 0 auto var(--section-gap);
 }
 
-.project-card h2{
-  text-align: center;
+.project-card h2 {
   font-weight: 700;
+  margin-bottom: 2rem;
 }
-.card{
-  border-radius: 20px;
-  transition: transform 0.3s ease,box-shadow 0.3s ease;
+
+.project-card .card {
+  width: 100%;
+  border: none;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover{
+
+.project-card .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
 }
-.card .card-body,
-.card .card-title,
-.card .card-text,
-.card .btn
-{transition: none;}
+
+.project-card .card-body {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-card .card-title {
+  font-size: clamp(1.7rem, 3vw, 2.1rem);
+  margin-bottom: 0;
+}
+
+.project-card .card-text {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 18rem;
+}
+
+.project-card .btn {
+  min-width: 180px;
+  border-radius: 12px;
+  padding: 0.75rem 1.25rem;
+}
+
+#contact {
+  max-width: 760px;
+  margin: 0 auto var(--section-gap);
+  padding: clamp(2rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  backdrop-filter: blur(6px);
+}
+
+#contact a {
+  color: #0d3b8c;
+  font-weight: 600;
+}
+
+#contact .form-control {
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 84px;
+  }
+
+  .portfolio-navbar .navbar-collapse {
+    margin-top: 0.85rem;
+    padding: 1rem;
+    border-radius: 18px;
+    background: rgba(136, 41, 0, 0.92);
+  }
+
+  .portfolio-navbar .nav-link {
+    padding: 0.75rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding: 0 16px;
+    margin-bottom: 3rem;
+  }
+
+  #hero {
+    border-radius: 24px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  #skillsTab .nav-link {
+    padding: 0.65rem 1rem;
+  }
+
+  .project-card .card-body {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .project-card .card-title {
+    font-size: 1.55rem;
+  }
+
+  .project-card .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-navbar .navbar-brand {
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
