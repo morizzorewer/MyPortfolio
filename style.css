@@ -6,6 +6,12 @@
   --card-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -75,6 +81,7 @@ section {
   border-radius: 28px;
   padding: clamp(2rem, 6vw, 4rem);
   margin: 0 auto;
+  width: min(calc(100% - 1.5rem), 900px);
   max-width: 900px;
   box-shadow: var(--card-shadow);
 }
@@ -82,6 +89,12 @@ section {
 .hero-content {
   width: 100%;
   min-width: 0;
+}
+
+.hero-actions {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #hero h1 {
@@ -104,10 +117,14 @@ section {
 }
 
 .hero-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-width: 160px;
   border-radius: 14px;
   padding: 0.8rem 1.6rem;
   font-weight: 600;
+  margin-inline: auto;
 }
 
 .btn-primary {
@@ -182,6 +199,7 @@ section {
   color: #222;
   padding: clamp(2rem, 5vw, 4rem) 20px;
   border-radius: 28px;
+  width: min(calc(100% - 1.5rem), 1000px);
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -255,6 +273,7 @@ section {
 
 #contact {
   max-width: 760px;
+  width: min(calc(100% - 1.5rem), 760px);
   margin: 0 auto var(--section-gap);
   padding: clamp(2rem, 5vw, 3rem);
   background: rgba(255, 255, 255, 0.14);
@@ -265,6 +284,7 @@ section {
 #contact a {
   color: #0d3b8c;
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 #contact .form-control {
@@ -302,6 +322,12 @@ section {
   .hero-actions .btn {
     width: 100%;
     max-width: 240px;
+  }
+
+  #about,
+  #contact,
+  #hero {
+    width: min(calc(100% - 1rem), 100%);
   }
 
   #skillsTab .nav-link {
