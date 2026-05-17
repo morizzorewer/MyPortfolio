@@ -4,7 +4,7 @@ This is my personal portfolio website showcasing my skills in full‑stack web d
 It highlights my experience with Python, Flask, Django, Angular, Node.js, HTML, CSS, JavaScript, and Git, along with modern frontend frameworks.
 
 🔗 **Live Demo**  
-Visit my portfolio here: [MyPortfolio](https://morizzorewer.github.io/MyPortfolio/)
+Visit my portfolio here: [MyPortfolio](https://snehaprabhakr.github.io/MyPortfolio/)
 
 ---
 
